@@ -1,3 +1,4 @@
+import "./abcdefgh.ts"
 namespace rstuvwxyz(){
    [r][s][t]
    [u][v][w]
