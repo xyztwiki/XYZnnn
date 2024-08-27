@@ -9,8 +9,8 @@ Function RectangularToSphere(ByVal X As Single, ByVal Y As Single, ByVal Z As Si
     Dim theta As Single
     Dim phi As Single
     
-    r = Sqr(X * X + Y * Y + Z * Z)
-    theta = Atn2(Y, X)
-    phi = Atn2(Sqr(X * X + Y * Y), Z)
+    r = Sqrt(X * X + Y * Y + Z * Z)
+    theta = Atan2(Y, X)
+    phi = Atan2(Sqr(X * X + Y * Y), Z)
     
     RectangularToSpherical.R = r
