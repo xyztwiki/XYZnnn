@@ -16,10 +16,10 @@ export const vertices: Point[] = [
     new Point(0 ,0 ,1)
 ]
 export const face: Point[][] = [
-     [vertices[0], vertices[1], vertices[2]],
-     [vertices[0], vertices[2], vertices[4]],
-     [vertices[1], vertices[3], vertices[4]],
-     [vertices[1], vertices[2], vertices[4]],
-     [vertices[2], vertices[3], vertices[4]]
+     [vertices[0], vertices[1], vertices[2],
+     [vertices[0], vertices[2], vertices[4],
+     [vertices[1], vertices[3], vertices[4],
+     [vertices[1], vertices[2], vertices[4],
+     [vertices[2], vertices[3], vertices[4]
 ]
 console.log(vertices,face)
