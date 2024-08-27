@@ -5,25 +5,25 @@ point(1, 0) = 2.0: point(1, 1) = 1.0
 point(2, 0) = 2.0: point(2, 1) = 2.0
 point(3, 0) = 1.0: point(3, 1) = 2.0
 point(4, 0) = 1.0: point(4, 1) = 1.0
-' 计算五边形的面积calculate the area of pentagon
-Function CalculateArea(points() As Double) As Double
-    Dim area As Double
+' 计算五边形的面积calculate the SurfaceArea of pentagon
+Function CalculateSurfaceArea(points() As Double) As Double
+    Dim SurfaceArea As Double
     Dim i As Integer
     Dim j As Integer
     Dim n As Integer = points.Length \ 2
-    area = 0.0
+    SurfaceArea = 0.0
     For i = 0 To n - 1
-        area = area + points(i * 2, 0) * points(i * 2 + 1, 1)
+        SurfaceArea = SurfaceArea + points(i * 2, 0) * points(i * 2 + 1, 1)
     Next
     For i = 0 To n - 2
-        area = area + points(i * 2, 1) * points(i * 2 + 2, 0)
+        SurfaceArea = SurfaceArea + points(i * 2, 1) * points(i * 2 + 2, 0)
     Next
-    area = area + points(n * 2 - 2, 1) * points(0, 0)
-    area = 0.5 * Abs(area)
-    Return area
+    SurfaceArea = SurfaceArea + points(n * 2 - 2, 1) * points(0, 0)
+    SurfaceArea = 0.5 * Abs(SurfaceArea)
+    Return SurfaceArea
 End Function
 ' 主程序main program
 Sub Main()
-    Dim area As Double = CalculateArea(point)
-    Console.WriteLine("The area of the pentagon is: " & area)
+    Dim SurfaceArea As Double = CalculateSurfaceArea(point)
+    Console.WriteLine("The SurfaceArea of the pentagon is: " & SurfaceArea)
 End Sub
