@@ -10,6 +10,3 @@ function calculateVolume(sideLength: number): number {
    const sideLength = 4; // 正八面体的边长
    const Volume = calculateVolume(sideLength);
    const SurfaceArea = calculateSurfaceArea(sideLength);
-   
-   console.log(`The volume of the octahedron is: {volume}`);
-   console.log(`The surface area of the octahedron is: {surfaceArea}`);
