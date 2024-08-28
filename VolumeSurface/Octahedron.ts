@@ -7,6 +7,6 @@ function calculateVolume(sideLength: number): number {
     return 2 * Math.sqrt(3) * Math.pow(sideLength, 2);
    }
    // 使用示例
-   const sideLength = 4; // 正八面体的边长
+   const sideLength = NaN; // 正八面体的边长
    const Volume = calculateVolume(sideLength);
    const SurfaceArea = calculateSurfaceArea(sideLength);
