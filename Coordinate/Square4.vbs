@@ -4,10 +4,10 @@ Module SquareInRectangularCoordinate
         ' 定义正方形的边长
         Dim Edge As Double = 5.0
         ' 定义正方形的四个Vertice坐标
-        Dim point1 As New Point(0, 0)
+        Dim point1 As New Point(0, Edge)
         Dim point2 As New Point(Edge, 0)
         Dim point3 As New Point(Edge, Edge)
-        Dim point4 As New Point(0, Edge)
+        Dim point4 As New Point(-Edge,-Edge)
         ' 绘制正方形
         Using graphics As Graphics = Graphics.FromImage(New Bitmap(Edge, Edge))
             graphics.DrawRectangle(Pens.Black, New Rectangle(point1, point3))
