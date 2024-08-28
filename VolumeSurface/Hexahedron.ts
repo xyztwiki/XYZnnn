@@ -10,6 +10,3 @@ class Cube {
         return 6 * this.edgeLength ** 2;
     }
 }
-// 使用示例
-const cube = new Cube(5);
-console.log(`体积:{cube.volume}, 表面积:{cube.surfaceArea}`);
