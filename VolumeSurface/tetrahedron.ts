@@ -10,7 +10,3 @@ class Tetrahedron {
         return Math.sqrt(3) * this.edgeLength ** 2;
     }
 }
-// 使用示例
-const tetrahedron = new Tetrahedron(5); // 假设棱长为5
-console.log(`体积: {tetrahedron.volume}`);
-console.log(`表面积: {tetrahedron.surfaceArea}`);
