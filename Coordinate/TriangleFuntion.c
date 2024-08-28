@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define PI 3.14159265358979323846
+#define PI 3.1415926
 // 定义一个三维向量结构体
 typedef struct {
     double x;
