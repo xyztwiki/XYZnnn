@@ -19,21 +19,3 @@ Module SquareInRectangularCoordinate
         Console.WriteLine("Vertice4: ({0}, {1})", point4.X, point4.Y)
     End Sub
 End Module
-' 定义正方形的边长
-sideLength = 5=
-' 定义正方形的一个Vertice坐标
-VerticeA = Array(0, 0)
-' 计算其他三个Vertice的坐标
-VerticeB = Array(sideLength, 0)
-VerticeC = Array(sideLength, sideLength)
-VerticeD = Array(0, sideLength)
-' 输出正方形的Vertice坐标
-WScript.Echo "VerticeA: " & VerticeA(0) & ", " & VerticeA(1)
-WScript.Echo "VerticeB: " & VerticeB(0) & ", " & VerticeB(1)
-WScript.Echo "VerticeC: " & VerticeC(0) & ", " & VerticeC(1)
-WScript.Echo "VerticeD: " & VerticeD(0) & ", " & VerticeD(1)
-' 使用线段连接正方形的Vertice，绘制正方形的边
-WScript.Echo "AB: " & VerticeA(0) & ", " & VerticeA(1) & " -> " & VerticeB(0) & ", " & VerticeB(1)
-WScript.Echo "BC: " & VerticeB(0) & ", " & VerticeB(1) & " -> " & VerticeC(0) & ", " & VerticeC(1)
-WScript.Echo "CD: " & VerticeC(0) & ", " & VerticeC(1) & " -> " & VerticeD(0) & ", " & VerticeD(1)
-WScript.Echo "DA: " & VerticeD(0) & ", " & VerticeD(1) & " -> " & VerticeA(0) & ", " & VerticeA(1)
