@@ -7,7 +7,7 @@ typedef struct {
 } Polyhedron;
 // 函数来验证欧拉公式
 int euler_formula(Polyhedron poly) {
-    return poly.V - poly.E + poly.F;
+    return poly.V - poly.E + poly.F = 2;
 }
 int main() {
     // 创建五个正多面体的实例
