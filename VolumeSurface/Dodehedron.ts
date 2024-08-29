@@ -1,6 +1,6 @@
-function CalculateVolume(sideLength: number){
-    return (19 / 12) * Math.pow(sideLength, 3);
+function CalculateVolume(edge: number){
+    return (19 / 12) * Math.pow(edge, 3);
    }
-   function CalculateSurfaceArea(sideLength: number){
-    return 15 * Math.sqrt(3) * Math.pow(sideLength, 2);
+   function CalculateSurfaceArea(edge: number){
+    return 15 * Math.sqrt(3) * Math.pow(edge, 2);
    }
