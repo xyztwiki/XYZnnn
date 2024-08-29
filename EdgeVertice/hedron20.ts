@@ -7,7 +7,7 @@ export function IcosahedronEdgeVertice(radius: number) {
                        radius * Math.sin(theta) * Math.sin(phi), 
                        radius * Math.cos(theta)]);
     }
-    const edges: [number, number][] = [];
+    const edges: [][][] = [];
     for (let i = 0; i < 12; ++i) {
         edges.push([i, (i + 1) % 12]);
     }
