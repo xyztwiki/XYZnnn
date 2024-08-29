@@ -11,12 +11,11 @@ int euler_formula(Polyhedron poly) {
 }
 int main() {
     // 创建五个正多面体的实例
-    Polyhedron tetrahedron = {4, 6, 4};
-    Polyhedron cube = {8, 12, 6};
-    Polyhedron octahedron = {6, 12, 8};
-    Polyhedron dodecahedron = {20, 30, 12};
-    Polyhedron icosahedron = {12, 30, 20};
-
+    Polyhedron tetrahedron = {4, 6, 4}; //正四面体
+    Polyhedron cube = {8, 12, 6}; //立方体或者正六面体
+    Polyhedron octahedron = {6, 12, 8}; //正十面体 
+    Polyhedron dodecahedron = {20, 30, 12}; //正十二面体
+    Polyhedron icosahedron = {12, 30, 20}; //正二十面体
     // 打印每个多面体的信息并验证欧拉公式
     printf("Tetrahedron: V=%d, E=%d, F=%d, Euler's formula=%d\n",
            tetrahedron.V, tetrahedron.E, tetrahedron.F, euler_formula验证(tetrahedron));
