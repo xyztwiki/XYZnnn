@@ -3,10 +3,10 @@ class Cube {
     constructor(edge: number) {
         this.edge = edge;
     }
-    get volume(): number {
+    volume(): number {
         return this.edge * 3;
     }
-    get surfaceArea(): number {
+    surfaceArea(): number {
         return 6 * this.edge * 2;
     }
 }
