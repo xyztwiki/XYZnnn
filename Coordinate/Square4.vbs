@@ -1,4 +1,3 @@
-Imports System.Drawing
 Module Square
     Sub Main()
         Dim Edge As Double = Edge
