@@ -1,4 +1,3 @@
-
 typedef struct {
     int V; // 顶点数
     int E; // 边数
