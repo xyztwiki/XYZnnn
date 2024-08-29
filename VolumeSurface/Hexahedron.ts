@@ -1,5 +1,4 @@
 class Cube {
-    private edge: number;
     constructor(edge: number) {
         this.edge = edge;
     }
