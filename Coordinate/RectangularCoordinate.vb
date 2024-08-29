@@ -4,7 +4,7 @@ Dim X AS SINGLE
 Dim Y AS SINGLE
 Dim Z AS SINGLE
 ' Convert rectangular coordinates to spherical coordinates
-Function RectangularToSphere(ByVal X As Single, ByVal Y As Single, ByVal Z As Single) As SphereCoordinate
+Function RectangularToSphere(ByVal X , ByVal Y , ByVal Z ) As SphereCoordinate
     Dim r As Single
     Dim theta As Single
     Dim phi As Single
