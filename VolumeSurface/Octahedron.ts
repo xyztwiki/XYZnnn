@@ -5,4 +5,4 @@ function Volume(Edge: number){
 function Surface(Edge: number){
     return 2 * Math.sqrt(3) * Math.pow(Edge, 2);
 }
-   const Edge = NaN; // 正八面体
+   const Edge = NaN;
