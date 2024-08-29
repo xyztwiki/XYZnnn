@@ -1,12 +1,12 @@
 class Cube {
-    private edgeLength: number;
-    constructor(edgeLength: number) {
-        this.edgeLength = edgeLength;
+    private edge: number;
+    constructor(edge: number) {
+        this.edge = edge;
     }
     get volume(): number {
-        return this.edgeLength ** 3;
+        return this.edge ** 3;
     }
     get surfaceArea(): number {
-        return 6 * this.edgeLength ** 2;
+        return 6 * this.edge ** 2;
     }
 }
