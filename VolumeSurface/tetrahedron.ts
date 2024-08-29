@@ -1,3 +1,4 @@
+//正四面体
 class Tetrahedron {
     constructor(edge: number) {
         this.edge = edge;
