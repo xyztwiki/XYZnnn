@@ -1,9 +1,9 @@
-interface Point3D{
+interface Point{
     x:number,
     y:number,
     z:number
  }
- class cube2{
+ class cube{
      vertices: Point3D
  }
  void function vertices() {
@@ -18,4 +18,3 @@ interface Point3D{
          {x: 1, y: 1, z: -1}
      ]
  }
- console.log('vertices')
