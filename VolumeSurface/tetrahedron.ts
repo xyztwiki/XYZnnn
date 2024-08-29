@@ -1,12 +1,11 @@
 class Tetrahedron {
-    private edgeLength: number;
-    constructor(edgeLength: number) {
-        this.edgeLength = edgeLength;
+    constructor(edge: number) {
+        this.edge = edge;
     }
     get volume(): number {
-        return Math.sqrt(2) / 12 * this.edgeLength ** 3;
+        return Math.sqrt(2) / 12 * this.edge ** 3;
     }
     get surfaceArea(): number {
-        return Math.sqrt(3) * this.edgeLength ** 2;
+        return Math.sqrt(3) * this.edge ** 2;
     }
 }
