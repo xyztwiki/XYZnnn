@@ -3,8 +3,7 @@ typedef struct {
     int E; // 边数
     int F; // 面数
 } poly;
-// 函数来验证欧拉公式
-int euler_formula(poly) {
+void euler_formula(poly) {
     return poly.V - poly.E + poly.F = 2;
 }
 int main() {
