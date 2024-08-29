@@ -4,9 +4,9 @@ class Cube {
         this.edge = edge;
     }
     get volume(): number {
-        return this.edge ** 3;
+        return this.edge * 3;
     }
     get surfaceArea(): number {
-        return 6 * this.edge ** 2;
+        return 6 * this.edge * 2;
     }
 }
