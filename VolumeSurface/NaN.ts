@@ -1,2 +1,2 @@
-let EdgeLength = NaN;
+let Edge = NaN;
 const number = isNaN;
