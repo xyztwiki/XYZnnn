@@ -1,3 +1,4 @@
+import "../Coordinate/RectangularCoordinate.ts"
 interface Point{
     x:number,
     y:number,
