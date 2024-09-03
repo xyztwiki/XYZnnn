@@ -8,7 +8,7 @@ class Point {
         this.z = z;
     }
 }
-const vertices: Point[] = [
+const vertice: Point[] = [
     new Point(1, 1, 1),    // 0: front top right
     new Point(-1, 1, 1),   // 1: front top left
     new Point(-1, -1, 1),  // 2: front bottom left
@@ -19,10 +19,10 @@ const vertices: Point[] = [
     new Point(1, -1, -1)   // 7: back bottom right
 ];
 const faces: Point[][] = [
-    [vertices[0], vertices[1], vertices[2], vertices[3]], // Front face
-    [vertices[4], vertices[5], vertices[6], vertices[7]], // Back face
-    [vertices[0], vertices[4], vertices[7], vertices[3]], // Right face
-    [vertices[1], vertices[5], vertices[6], vertices[2]], // Left face
-    [vertices[0], vertices[1], vertices[5], vertices[4]], // Top face
-    [vertices[3], vertices[2], vertices[6], vertices[7]]  // Bottom face
+    [vertice[0], vertice[1], vertice[2], vertice[3]], // Front face
+    [vertice[4], vertice[5], vertice[6], vertice[7]], // Back face
+    [vertice[0], vertice[4], vertice[7], vertice[3]], // Right face
+    [vertice[1], vertice[5], vertice[6], vertice[2]], // Left face
+    [vertice[0], vertice[1], vertice[5], vertice[4]], // Top face
+    [vertice[3], vertice[2], vertice[6], vertice[7]]  // Bottom face
 ];
