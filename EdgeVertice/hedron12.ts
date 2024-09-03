@@ -1,55 +1,38 @@
-const tau = (1 + Math.sqrt(5)) / 2; // Golden ratio
-const icosahedronVertices: Array<[number, number, number]> = [
-  [1, 1, 1], 
-  [1, -1, 1], 
-  [-1, 1, 1], 
-  [-1, -1, 1],
-  [1, 1, -1], 
-  [1, -1, -1], 
-  [-1, 1, -1], 
-  [-1, -1, -1],
-  [tau, 0, 1], 
-  [tau, 0, -1], 
-  [-tau, 0, 1], 
-  [-tau, 0, -1],
-  [0, tau, 1], 
-  [0, tau, -1], 
-  [0, -tau, 1], 
-  [0, -tau, -1],
-  [1, tau, 0], 
-  [1, -tau, 0], 
-  [-1, tau, 0], 
-  [-1, -tau, 0]
+function Dodehedron(x: number, y: number, z: number): { r: number; theta: number; phi: number } {
+    const r = Math.sqrt(x * x + y * y + z * z);
+    const theta = Math.acos(z / r);
+    let phi = Math.acos(x / Math.sqrt(x * x + y * y));
+    // Adjust phi for the correct quadrant
+    if (y < 0) {
+        phi = 2 * Math.PI - phi;
+    }
+    return { r, theta, phi };
+}
+// Define the vertices of the dodecahedron
+const vertices: Array<[number, number, number]> = [
+    [1, 1, 1],
+    [1, 1, -1],
+    [1, -1, 1],
+    [1, -1, -1],
+    [-1, 1, 1],
+    [-1, 1, -1],
+    [-1, -1, 1],
+    [-1, -1, -1],
+    [phi, 0, 1 / phi],
+    [phi, 0, -1 / phi],
+    [-phi, 0, 1 / phi],
+    [-phi, 0, -1 / phi],
+    [0, phi, 1 / phi],
+    [0, phi, -1 / phi],
+    [0, -phi, 1 / phi],
+    [0, -phi, -1 / phi],
+    [1 / phi, phi, 0],
+    [1 / phi, -phi, 0],
+    [-1 / phi, phi, 0],
+    [-1 / phi, -phi, 0]
 ];
-const icosahedronFaces: Array<[number, number, number]> = [
-  [0, 11, 5], 
-  [0, 5, 1], 
-  [0, 1, 7], 
-  [0, 7, 10], 
-  [0, 10, 11],
-  [1, 5, 9], 
-  [5, 11, 4], 
-  [11, 10, 2], 
-  [10, 7, 6], 
-  [7, 1, 8],
-  [1, 9, 4], 
-  [2, 10, 6], 
-  [3, 4, 8], 
-  [3, 8, 9], 
-  [3, 9, 5],
-  [3, 5, 0], 
-  [3, 2, 6], 
-  [3, 6, 4], 
-  [3, 0, 7], 
-  [3, 7, 8],
-  [2, 6, 7], 
-  [2, 7, 1], 
-  [2, 1, 9], 
-  [2, 9, 4], 
-  [6, 10, 8],
-  [6, 8, 9], 
-  [6, 9, 3], 
-  [6, 3, 2], 
-  [8, 10, 2], 
-  [8, 2, 4]
-];
+// Convert each vertex to spherical coordinates and print them
+vertices.forEach(vertex => {
+    const { r, theta, phi } = toSpherical(vertex[0], vertex[1], vertex[2]);
+    console.log(`Cartesian: [{vertex[0]}, {vertex[1]}, {vertex[2]}] -> Spherical: r={r}, theta={theta.toFixed(4)} radians, phi={phi.toFixed(4)} radians`);
+});
