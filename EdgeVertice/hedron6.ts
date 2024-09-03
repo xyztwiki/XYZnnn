@@ -18,11 +18,11 @@ const Point[] = [
      Point7(-1, -1, -1), // 6: back bottom left
      Point8(1, -1, -1)   // 7: back bottom right
 ];
-const faces: Point[][] = [
-    [Point[0], Point[1], Point[2], Point[3]], // Front face
-    [Point[4], Point[5], Point[6], Point[7]], // Back face
-    [Point[0], Point[4], Point[7], Point[3]], // Right face
-    [Point[1], Point[5], Point[6], Point[2]], // Left face
-    [Point[0], Point[1], Point[5], Point[4]], // Top face
-    [Point[3], Point[2], Point[6], Point[7]]  // Bottom face
+const face: Point[][] = [
+    [Point[1], Point[2], Point[3], Point[4]], // Front face
+    [Point[5], Point[6], Point[7], Point[8]], // Back face
+    [Point[1], Point[5], Point[8], Point[4]], // Right face
+    [Point[2], Point[6], Point[7], Point[3]], // Left face
+    [Point[1], Point[2], Point[6], Point[5]], // Top face
+    [Point[4], Point[3], Point[7], Point[8]]  // Bottom face
 ];
