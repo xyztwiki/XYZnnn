@@ -4,18 +4,26 @@ interface Point{
     y:number,
     z:number
 }
-function vertices(){
+function vertice(){
      return [
-         {x: 1,  y: 0,  z: 0},
-         {x: 0,  y: 1,  z: 0},
-         {x: -1, y: 0,  z: 0},
-         {x: 0,  y: -1, z: 0},
-         {x: 0,  y: 0,  z: 1},
-         {x: 0,  y: 0,  z:-1},
+       vertice[1] = {x: 1,  y: 0,  z: 0},
+       vertice[2] = {x: 0,  y: 1,  z: 0},
+       vertice[3] = {x: -1, y: 0,  z: 0},
+       vertice[4] = {x: 0,  y: -1, z: 0},
+       vertice[5] = {x: 0,  y: 0,  z: 1},
+       vertice[6] = {x: 0,  y: 0,  z:-1},
      ]
  }
-function faces(){
+function face(){
     return [
+      [vertice[1],vertice[2],vertice[5]],
+      [vertice[2],vertice[3],vertice[5]],
+      [vertice[3],vertice[4],vertice[5]],
+      [vertice[4],vertice[1],vertice[5]],
         
+      [vertice[1],vertice[2],vertice[6]],
+      [vertice[2],vertice[3],vertice[6]],
+      [vertice[3],vertice[4],vertice[6]],
+      [vertice[4],vertice[1],vertice[6]], 
     ]
 }
