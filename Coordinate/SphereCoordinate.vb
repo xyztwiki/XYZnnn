@@ -1,4 +1,5 @@
 Imports System.Math
+Imports "Triangle3.vbs"
 DIM r AS DOUBLE
 DIM theta AS DOUBLE
 DIM phi AS DOUBLE
