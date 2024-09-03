@@ -1,5 +1,4 @@
 Imports System.Math
-Imports "Triangle3.c"
 DIM r AS DOUBLE
 DIM theta AS DOUBLE
 DIM phi AS DOUBLE
