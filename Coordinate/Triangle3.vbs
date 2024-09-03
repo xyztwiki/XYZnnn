@@ -1,4 +1,4 @@
-Module Square
+Module Triangle
     Sub Main()
         Dim Edge As Double = Edge
         Dim point1 As New Point(Edge, Edge）
