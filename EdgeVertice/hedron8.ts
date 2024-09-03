@@ -7,8 +7,8 @@ interface Point{
 function vertice(){
      return [
        vertice[1] = {x: 1,  y: 0,  z: 0},
-       vertice[2] = {x: 0,  y: 1,  z: 0},
-       vertice[3] = {x: -1, y: 0,  z: 0},
+       vertice[2] = {x: -1, y: 1,  z: 0},
+       vertice[3] = {x: 0,  y: 1,  z: 0},
        vertice[4] = {x: 0,  y: -1, z: 0},
        vertice[5] = {x: 0,  y: 0,  z: 1},
        vertice[6] = {x: 0,  y: 0,  z:-1},
