@@ -1,7 +1,7 @@
 Imports SphereCoordinate
 Module Pentagon
     Sub Main()
-        Dim Edge As Double = Edge
+        Dim Edge As Double
         Dim point8 As New Point(72, 0, 0)
         Dim point9 As New Point(144,0, 0)
         Dim point10 As New Point(216,0, 0)
