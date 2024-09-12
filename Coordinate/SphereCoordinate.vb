@@ -1,8 +1,8 @@
 Imports System.Math
 Imports "Triangle3.vbs"
-DIM r AS DOUBLE
-DIM theta AS DOUBLE
-DIM phi AS DOUBLE
+DIM r AS Integer
+DIM theta AS Integer
+DIM phi AS Integer
 Function RectangulartoSphere(ByVal X , ByVal Y , ByVal Z ) As SphereCoordinate
     
 const r = Sqrt(X * X + Y * Y + Z * Z)
