@@ -7,7 +7,7 @@ Function RectangulartoSphere(ByVal X , ByVal Y , ByVal Z ) As SphereCoordinate
     
 const r = Sqrt(X * X + Y * Y + Z * Z)
 const theta = Atan2(Y, X)
-const phi = Atan2(Sqr(X * X + Y * Y), Z)
+const phi = Atan2(Sqrt(X * X + Y * Y), Z)
   
 Byval X = r * SIN(theta) * COS(phi)
 Byval Y = r * SIN(theta) * SIN(phi)
