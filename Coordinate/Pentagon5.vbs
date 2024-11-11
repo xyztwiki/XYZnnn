@@ -8,4 +8,4 @@ Module Pentagon
         Dim point11 As New Point(328,0, 0)
         Dim point12 As New Point(360,0, 0)
 End Sub
-End Pentagon
+End Module
